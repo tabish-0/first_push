@@ -59,3 +59,31 @@ console.log(typeof id)
 //        Arrays  =>  object
 //        Function  =>  function
 //        Object  =>  object
+
+
+/*******************************************************/
+
+// Stack (Primitive) , Heap (Non-Primitive)
+
+let myYoutubename="hiteshChaudharydotcom"
+
+let anothername=myYoutubename
+anothername="chai aur code"
+
+console.log(myYoutubename)
+console.log(anothername)
+
+let userOne={
+    email:"user@google.com",
+    upi:"user@ybl"
+}
+
+let userTwo=userOne
+
+userTwo.email="hitesh@google.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
+
+// stack => value hi milta original mein change nahi hota kyuki copy milta hai
+// heap => reference milta hai jo change karte hai wo direct original mein change hota hai

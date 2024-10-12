@@ -54,10 +54,40 @@ const users=[
 
 users[1].email
 
-console.log(tinderUser)
+// console.log(tinderUser)
 
-console.log(Object.keys(tinderUser))   // object ke keys ko deta h array ke form mein in string datatype 
-console.log(Object.values(tinderUser))  // object mein stored values ko deta h array ke form mein in respective datatypes
-console.log(Object.entries(tinderUser))  // har ek key-value pair ko array mein store karke array return karta hai .. [[key,value],[key,value]]
+// console.log(Object.keys(tinderUser))   // object ke keys ko deta h array ke form mein in string datatype 
+// console.log(Object.values(tinderUser))  // object mein stored values ko deta h array ke form mein in respective datatypes
+// console.log(Object.entries(tinderUser))  // har ek key-value pair ko array mein store karke array return karta hai .. [[key,value],[key,value]]
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'))  // ye batata h ki uss object ke pass wo property(key) h ya nhi
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'))// ye batata h ki uss object ke pass wo property(key) h ya nhi
+
+
+
+const course={
+    coursename:"js in hindi",
+    price:"999",
+    courseInstructor:"hitesh"
+}
+
+// course.courseInstructor
+
+const {courseInstructor:instructor}=course  // destructured ho jata hai and, only instructor likh kar course object ke courseInstructor ko access kar sakte hai
+
+// console.log(courseInstructor)
+console.log(instructor)
+
+
+
+// {
+//     "name": "hitseh",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+
+
+[
+    {},
+    {},
+    {}
+]
